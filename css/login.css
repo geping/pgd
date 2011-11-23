@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+.login_main{clear:both;width:855px; height:300px;margin:0 auto; padding-top:34px;}
+.login{width:368px; height:282px;border-bottom:none; float:left; background-color:#f8fdff; margin-right:18px; overflow:hidden;}
+.register{width:462px; height:279px;border:1px solid #c2e1fe;float:left;}
+.login_top{ height:auto;border:1px solid #c2e1fe; border-bottom:none; }
+.login_t{ background:url(/images/login_t.jpg) 10px no-repeat; width:300px; margin:0 auto; height:70px; line-height:70px;}
+.login_t h2{font-size:14px; width:110px;float:left;padding-left:50px;}
+.login_t a{ display:block; width:100px; float:right;}
+.lg_ul{ width:300px;height:160px;margin:0 auto;}
+.lg_ul li{float:left; margin-top:10px;}
+.text_l{width:48px; padding-left:32px; height:28px; line-height:28px;}
+.input_l{ width:200px; height:28px; line-height:28px; border:1px solid #ccc; background-color:#fff; overflow:hidden;}
+.input_l input{width:200px; height:28px; line-height:28px;border:none; background:none;}
+.lg_ul .btn_l{width:150px; height:34px; padding-left:80px; margin-top:20px; cursor:pointer; }
+.lg_ul .btn_l input{ width:86px; height:34px; float:left; cursor:pointer; background:url(/images/login_btn.gif) left top; border:0;}
+.btn_l a{float:left; display:block; width:50px;text-align:right; margin:7px 0 0 13px;}
+.login_bottom_box{ border-bottom:1px solid red;  border-left:1px solid #c2e1fe; border-right:1px solid #c2e1fe;}
+.login_bottom{ position:relative; height:51px; line-height:51px; background-color:#f8fdff; font-size:14px;  }
+.login_bottom a{display:block;width:183px;float:left; height:38px;border:1px solid #c2e1fe;text-align:center; line-height:38px; top:11px; background-color:#fff; position:absolute;border-left:none;}
+.login_bottom  .safe{background-color:#fff; margin-left:183px; cursor:pointer}
+.login_bottom  .safe .tt{ margin:0 auto; background:url(/images/cut.gif) 0 8px no-repeat; height:39px;width:90px; display:block; line-height:39px; }
+.login_bottom  .checked .tt{ margin-top:13px;}
+.login_bottom a,.login_bottom a:visited{color:#000;}
+.login_bottom  .checked{background:url(/images/btn_s.gif) no-repeat; height:51px;font-weight:bold; margin-top:0; border:none; line-height:64px; overflow:hidden; top:0; border-bottom:1px solid #c2e1fe;}
+.login_bottom .checked,.login_bottom .checked:visited{color:#055793;}
+.register h3{heigth:50px; line-height:50px;font-size:14px;font-weight:normal; background:url(/images/re.gif) 0 10px no-repeat; width:370px; margin:0 auto;padding-left:45px; border-bottom:1px solid #e2e2e2;}
+.re_pact{width:400px; margin:20px auto; height:80px;}
+.re_pact li{ float:left; height:35px; line-height:35px;width:200px; background:url(/images/xb.gif) no-repeat;text-align:center;}
+.re_pact .p1{ background-position:5px -290px;}
+.re_pact .p2{ background-position:0 -390px;}
+.re_pact .p3{ background-position:0 -340px;}
+.re_pact .p4{ background-position:0 -440px;}
+.re_btn{ background:url(/images/login_btn.gif) left -38px no-repeat; display:block; width:96px; height:34px; margin:0 auto;}
+/*找回密码*/
+.getpas{clear:both;width:900px; margin:0 auto;padding-top:20px;}
+.hi_box{background-color:#e5e5e5; margin:0 auto;width:700px;height:2px; overflow:hidden;}
+.getbox{width:700px;border:1px solid #ccc;margin:0 auto; text-align:center;background:#fff;}
+.getbox h2{font-size:16px; height:50px; line-height:50px; padding-left:20px; border-bottom:1px solid #e2e2e2; width:600px; margin:0 auto; text-align:left;}
+.getbox button{ margin:20px 0;}
+.getbox .top_title{font-size:14px; height:40px; line-height:40px; margin-top:20px;}
+.mail h3{font-size:14px;height:28px;line-height:28px; text-align:left; background-color:#e2e2e2; margin:0 auto; padding-left:30px;}
+.mail{width:500px; margin:0 auto; border:1px solid #ccc; text-align:left;}
+.mail p{height:28px; line-height:28px;}
+.mail p,.mail input{ margin-left:30px;}
+.warn{color:#999;}
+.va_num{ clear:both; width:300px; margin-top:20px; overflow:hidden; margin-left:100px;}
+.va_num img{width:120px;height:40px; border:1px solid #ccc;margin-top:10px;}
+.va{height:60px; width:120px;float:left;}
+.va input{width:80px;}
+.page03{line-height:30px; text-align:left;font-size:14px; padding-left:50px; margin:20px 0;}
+
+/*用户登录弹出框*/
+.mid .warn{height:24px; line-height:24px; border:1px solid #0292ed; background:url(/images/warn.gif) 5px 4px no-repeat #dfeef8; color:#000; padding-left:28px;}
+.quest{display:block; text-align:right;}
+.f_res{width:100px;margin:0 auto; display:block;}
+.mid .lg_ul{margin-top:0; margin-bottom:10px; padding:8px 0; border-bottom:1px solid #93d3fc; }
+.netbad{width:300px;padding:20px 0; border-bottom:1px solid #93d3fc; margin:0 auto;margin-bottom:10px; text-align:center;}
+
