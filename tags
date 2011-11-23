@@ -2683,6 +2683,7 @@ get	tks/libraries/Cache/drivers/Cache_file.php	/^	public function get($id)$/;"	f
 get	tks/libraries/Cache/drivers/Cache_memcached.php	/^	public function get($id)$/;"	f
 getEvent	js/share.js	/^function getEvent() {$/;"	f
 getIp	gp/libraries/func.php	/^	public function getIp() {$/;"	f
+getPinyinAbb	gp/libraries/func.php	/^	public function getPinyinAbb($str) {$/;"	f
 get_clickable_smileys	tks/helpers/smiley_helper.php	/^	function get_clickable_smileys($image_url, $alias = '', $smileys = NULL)$/;"	f
 get_config	tks/core/Common.php	/^	function &get_config($replace = array())$/;"	f
 get_cookie	tks/helpers/cookie_helper.php	/^	function get_cookie($index = '', $xss_clean = FALSE)$/;"	f
