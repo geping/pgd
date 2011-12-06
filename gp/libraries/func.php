@@ -383,6 +383,28 @@ class Func {
 		$show_page_num = $offest * 2 + 1;//偏移量乘2+1，构造分页效果数目
 		$page_count = (int)ceil($total/$pagesize);//总共有多少页
 
+		//处理URL
+		$uri = $uri_flag = '';
+		$uri = $_SERVER['REQUEST_URI'];
+		if (preg_match('/\?page=[0-9]+/', $uri)) {
+			if (preg_match('/\?page=[\d]+&/', $uri)) {
+				$uri = preg_replace('/^(.*)\?(page=[0-9]+)&(.+)/', '\\1?\\3', $uri);
+			} else {
+				$uri = preg_replace('/\?page=[0-9]+/', '', $uri);
+			}
+		} elseif (preg_match('/&page=[0-9]+/', $uri)) {
+			$uri = preg_replace('/&page=[0-9]+/', '', $uri);
+		}
+		if (stripos($uri, '?') === FALSE) {
+			$uri_flag = '?';
+		} else {
+			$uri_flag = '&';
+		}
+		if ($uri === '') {
+			echo '初始化分页出错，请检查';
+			exit;
+		}
+
 		//一些其他判断
 		if ($page <= 1) {
 			//第一页
