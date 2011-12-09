@@ -276,14 +276,31 @@ class Home extends CI_Controller {
 			show_404();
 		}
 		$page = $this->input->get('page');
-		if (!$page) {
+		if (!$page || intval($page) <= 0) {
 			$page = 1;
 		}
 		$pagesize = 10;
-		
+
+		$total = $this->mhome->operatorCount();
+
 		$this->data['body']['list'] = $this->mhome->operatorSelect($page, $pagesize);
+		$this->data['body']['pages'] = $this->func->gpageStr($page, $pagesize, $total);
 
 		$this->_show('operator');
+	}
+
+	/*
+	 * 操作人员管理 -- 添加
+	 * @author: GP
+	 * @date: 2011年12月9日
+	 */
+	public function operatorAdd() {
+		$submit = $this->input->post('submit');
+		if ($submit) {
+			
+		}
+
+		$this->_show('operatoradd');
 	}
 
 	/*
