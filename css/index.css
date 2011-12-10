@@ -19,14 +19,26 @@
 .operator ul li{ border-bottom:#ccc 0px dashed; line-height:23px; height:23px; text-align:center; background: #fff;}
 .operator_tab{width: 100%; text-align: center; border: 1px solid #bac1cc;}
 .operator_tab_tr_th{background:url(/images/bg_search_list_2011_tb_hd.png) repeat; line-height: 27px; height: 27px; color: #454545;font-weight: bold;}
+.operator_tab_tr0{ background: #e3e3e3; height: 27px; line-height: 27px; }
+.operator_tab_tr1{ background: #f5f5f5; height: 27px; line-height: 27px; }
+
+/*添加操作人员*/
+.operatoradd_tab{width: 100%; text-align: center; border: 3px solid #F2FAFF;}
+.operatoradd_tab_tab{width: 100%; border-bottom: 1px dashed #aaaaaa;}
 
 .container {margin: 0 auto; width: 950px;}
 
-/*分页*/
+/*Ajax分页*/
 #pages{width: 950px; margin: 10px auto; text-align: center;}
 #pages .gpages { padding: 4px 9px; border:  1px solid #cbebff; margin: 2px 4px; color: #000000; background: #f2faff; cursor: pointer;}
 #pages .current { padding: 4px 9px; border:  1px solid #cbebff; margin: 2px 4px; color: #000000; background: #4fafe7;}
 #pages .ash { padding: 4px 9px; border:  1px solid #cbebff; margin: 2px 4px; color: #898989; background: #f2faff;}
+
+/*普通分页*/
+.pages{text-align:center;}
+.pages span{padding: 4px 9px; border:  1px solid #cbebff; margin: 2px 4px; color: #000000; background: #ffffff;}
+.pages .thisclass{padding: 4px 9px; border:  1px solid #cbebff; margin: 2px 4px; color: #666666; background: #dddddd;}
+.pages a{padding: 4px 9px; border:  1px solid #cbebff; margin: 2px 4px; color: #000000; background: #ffffff;}
 
 /*底部*/
 .index_foot { width:950px; text-align:center; padding:10px 0; margin:15px auto 0 auto; background:url(/images/line.gif) left top repeat-x; overflow:hidden }

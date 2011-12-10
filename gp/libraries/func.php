@@ -411,14 +411,14 @@ class Func {
 			$first = "<span>第一页</span>";
 		} else {
 			//第一页
-			$first = "<span><a href='/articlelist?page=1'>第一页</a></span>";
+			$first = "<a href='{$uri}{$uri_flag}page=1'>第一页</a>";
 		}
 		if ($page >= $page_count) {
 			//最后一页
 			$last = "<span>最后一页</span>";
 		} else {
 			//最后一页
-			$last = "<span><a href='/articlelist?page=$page_count'>最后一页</a></span>";
+			$last = "<a href='{$uri}{$uri_flag}page=$page_count'>最后一页</a>";
 		}
 		//构造数字链接
 		if ($page_count <= $show_page_num) {//如果总页数小于某一个值
@@ -441,7 +441,7 @@ class Func {
 			if ($page == $i) {
 				$page_num .= "<span class=\"".$class."\">$i</span>";
 			} else {
-				$page_num .= "<span><a href='/articlelist?page=$i'>$i</a></span>";
+				$page_num .= "<a href='{$uri}{$uri_flag}page=$i'>$i</a>";
 			}
 		}
 		//构造上一页和下一页
@@ -449,19 +449,19 @@ class Func {
 			$prev_link = "<span>上一页</span>";
 		} else {
 			$prev_page = $page - 1;
-			$prev_link = "<span><a href='/articlelist?page=$prev_page'>上一页</a></span>";
+			$prev_link = "<a href='{$uri}{$uri_flag}page=$prev_page'>上一页</a>";
 		}
 		if ($page >= $page_count) {
 			$next_link = "<span>下一页</span>";
 		} else {
 			$next_page = $page + 1;
-			$next_link = "<span><a href='/articlelist?page=$next_page'>下一页</a></span>";
+			$next_link = "<a href='{$uri}{$uri_flag}page=$next_page'>下一页</a>";
 		}
 
 		//分页信息
 		$pageinfo = '<span class="pageinfo">共<strong>'.$page_count.'</strong>页&nbsp;<strong>'.$total.'</strong>条</span>';
 		//组合分页
-		$g_page = $first.$prev_link.$page_num.$next_link.$last.$pageinfo;
+		$g_page = $first.$prev_link.$page_num.$next_link.$last;
 		return $g_page;
 	}
 
