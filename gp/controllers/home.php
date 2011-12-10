@@ -276,7 +276,9 @@ class Home extends CI_Controller {
 			show_404();
 		}
 		$page = $this->input->get('page');
-		if (!$page) {
+		$page = intval($page);
+		$total = $this->mhome->operatorCount();
+		if ($page <= 0) {
 			$page = 1;
 		}
 		$pagesize = 10;

@@ -12,9 +12,13 @@
 
 .load{background: url(/images/ajax-loader.gif) no-repeat; margin: 0 auto; width: 97px; position: relative; height: 16px; line-height: 16px; text-align: right;}
 .load_error{background: url(/images/error.png) no-repeat; margin: 0 auto; width: 68px; position: relative; height: 16px; line-height: 16px; text-align: right; color: red;}
+
+/*操作人员*/
 .operator {margin: 0 0 0 0;}
 .operator ul{display:none;border:#ccc 1px solid ; margin:-27px 0 0 453px; position: fixed;}
 .operator ul li{ border-bottom:#ccc 0px dashed; line-height:23px; height:23px; text-align:center; background: #fff;}
+.operator_tab{width: 100%; text-align: center; border: 1px solid #bac1cc;}
+.operator_tab_tr_th{background:url(/images/bg_search_list_2011_tb_hd.png) repeat; line-height: 27px; height: 27px; color: #454545;font-weight: bold;}
 
 .container {margin: 0 auto; width: 950px;}
 

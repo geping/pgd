@@ -12,9 +12,25 @@
 		</div>
 	</div>
 	<div>
-		<table style="">
-			<tr><td>i</td></tr>
-			<tr><td>a</td></tr>
+		<table class="operator_tab">
+			<tr class="operator_tab_tr_th">
+				<th>编号</th>
+				<th>姓名</th>
+				<th>所属部门</th>
+				<th>操作</th>
+			</tr>
+		<?php
+			foreach($body['list'] as $key => $value) {
+		?>
+			<tr>
+				<td align="center"><?php echo $value['p_id']; ?></td>
+				<td align="center"><?php echo $value['name']; ?></td>
+				<td align="center"><?php echo $value['department']; ?></td>
+				<td align="center">[编辑]&nbsp;[删除]</td>
+			</tr>
+		<?php
+			}
+		?>
 		</table>
 	</div>
 </div>
