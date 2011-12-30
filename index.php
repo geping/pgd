@@ -19,6 +19,7 @@
  *
  */
 	define('ENVIRONMENT', 'development');
+
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
