@@ -1,0 +1,7 @@
+#Deny from all
+RewriteEngine on
+RewriteBase /
+RewriteCond $1 !^(index\.php|images|robots\.txt|js|css)
+RewriteRule ^(\w+)\?(.+)$ index.php?c=main&m=$1&$2
+RewriteRule ^(\w+)$ index.php/main/$1 [L]
+

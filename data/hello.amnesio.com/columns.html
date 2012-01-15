@@ -1,0 +1,612 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	
+	<title>Hello! Admin</title>
+
+	<link type="text/css" href="./style.css" rel="stylesheet" /> <!-- the layout css file -->
+	<link type="text/css" href="./css/jquery.cleditor.css" rel="stylesheet" />
+	
+	<script type='text/javascript' src='./js/jquery-1.4.2.min.js'></script>	<!-- jquery library -->
+	<script type='text/javascript' src='./js/jquery-ui-1.8.5.custom.min.js'></script> <!-- jquery UI -->
+	<script type='text/javascript' src='./js/cufon-yui.js'></script> <!-- Cufon font replacement -->
+	<script type='text/javascript' src='./js/colaboratelight_400.font.js'></script> <!-- the Colaborate Light font -->
+	<script type='text/javascript' src='./js/easytooltip.js'></script> <!-- element tooltips -->
+	<script type='text/javascript' src='./js/jquery.tablesorter.min.js'></script> <!-- tablesorter -->
+	
+	<!--[if IE 8]>
+		<script type='text/javascript' src='http://hello.amnesio.com/js/excanvas.js'></script>
+		<link rel="stylesheet" href="http://hello.amnesio.com/css/IEfix.css" type="text/css" media="screen" />
+	<![endif]--> 
+ 
+	<!--[if IE 7]>
+		<script type='text/javascript' src='http://hello.amnesio.com/js/excanvas.js'></script>
+		<link rel="stylesheet" href="http://hello.amnesio.com/css/IEfix.css" type="text/css" media="screen" />
+	<![endif]--> 
+	
+	<script type='text/javascript' src='./js/visualize.jquery.js'></script> <!-- visualize plugin for graphs / statistics -->
+	<script type='text/javascript' src='./js/iphone-style-checkboxes.js'></script> <!-- iphone like checkboxes -->
+	<script type='text/javascript' src='./js/jquery.cleditor.min.js'></script> <!-- wysiwyg editor -->
+
+	<script type='text/javascript' src='./js/custom.js'></script> <!-- the "make them work" script -->
+<meta charset="UTF-8"></head>
+
+<body>
+
+	<div id="container">
+		<div id="bgwrap">
+			<div id="primary_left">
+        
+				<div id="logo">
+					<a href="http://hello.amnesio.com/dashboard.html" title="Dashboard"><img src="./assets/logo.png" alt="" /></a>
+				</div> <!-- logo end -->
+
+				<div id="menu"> <!-- navigation menu -->
+					<ul>
+						<li class="current"><a href="#" class="dashboard"><img src="./assets/icons/small_icons_3/dashboard.png" alt /><span class="current">Dashboard</span></a></li>
+						<li><a href="#"><img src="./assets/icons/small_icons_3/posts.png" alt /><span>Posts</span></a></li>
+						<li><a href="#"><img src="./assets/icons/small_icons_3/media.png" alt /><span>Media</span></a>
+							<ul>
+								<li><a href="#">Upload</a></li>
+								<li><a href="#">Add new</a></li>
+								<li><a href="#">Categories</a></li>
+							</ul>
+						</li>
+						<li class="tooltip" title="Menu items can also have a tooltip!"><a href="#"><img src="./assets/icons/small_icons_3/notes.png" alt /><span>My notes</span></a></li>
+						<li><a href="#"><img src="./assets/icons/small_icons_3/coin.png" alt /><span>Earnings</span></a></li>
+						<li><a href="#"><img src="./assets/icons/small_icons_3/users.png" alt /><span>Users</span></a></li>
+						<li><a href="#"><img src="./assets/icons/small_icons_3/settings.png" alt /><span>Settings</span></a></li>
+					</ul>
+				</div> <!-- navigation menu end -->
+			</div> <!-- sidebar end -->
+
+			<div id="primary_right">
+				<div class="inner">
+					
+					<h1>Column Snippets</h1>
+					
+					<p>You can combine the column snippets in many many ways to achieve any type of layout.</p>
+					
+						<div class="one_third column">
+							<h5>Maecenas ornare tortor</h5>
+							<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+							  Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet. Quisque
+							  aliquam. Donec faucibus.</p>
+						</div>
+
+						<div class="one_third column">
+						  <h5>Maecenas ornare tortor</h5>
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis. Proin
+							  tincidunt, velit vel porta elementum, magna diam molestie sapien, non
+							  aliquet massa pede eu diam. Aliquam iaculis.</p>
+						</div>
+
+						<div class="one_third last column">
+						  <h5>Maecenas ornare tortor</h5>
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis. Proin
+							  tincidunt, velit vel porta elementum, magna diam molestie sapien, non
+							  aliquet massa pede eu diam. Aliquam iaculis.</p>
+						</div>
+						
+						<hr />
+
+						<div class="two_third column">
+						  <h5>Maecenas ornare tortor</h5>
+							
+							  <p>Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+							  Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet. Quisque
+							  aliquam. Donec faucibus. Mauris a ante. Suspendisse quam sem, consequat
+							  at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis
+							  tellus.</p>
+
+						</div>
+
+						<div class="one_third last column">
+						  <h5>Maecenas ornare tortor</h5>
+							  <p>Lorem ipsum dolor sit amet. Quisque aliquam. Donec faucibus. Donec
+							  sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse
+							  quam sem, consequat at, commodo vitae, feugiat in, nunc.</p>
+						</div>
+						<hr />
+
+						<div class="one_fourth column">
+						  <h5>Donec aliquam</h5>
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis.</p>
+						</div>
+
+						<div class="one_fourth column">
+						  <h5>Donec aliquam</h5>
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis.</p>
+						</div>
+
+						<div class="one_fourth column">
+						  <h5>Donec aliquam</h5>
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis.</p>
+						</div>
+
+						<div class="one_fourth last column">
+						  <h5>Donec aliquam</h5>
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis.</p>
+						</div>
+						<hr />
+
+						<div class="one_half column">
+						  <h5>Small</h5>
+							  <p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.<br />
+							  Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Morbi imperdiet augue quis tellus.<br />
+						</div><!-- half -->
+
+						<div class="one_half last column">
+						  <h5>Small</h5>
+							  <p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.<br />
+							  Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Morbi imperdiet augue quis tellus.<br />
+							  Lorem ipsum dolor sit amet. Quisque aliquam. Donec faucibus.</p>
+						</div><!-- half -->
+						<hr />
+
+						<div class="one_fourth column">
+						  <h5>Small</h5>
+							
+							  <p>Lorem ipsum dolor sit amet. Quisque aliquam. Donec at quis
+							  faucibus.</p>
+						
+					
+						  
+						  <hr />
+
+						  <div class="one_half column">
+							<h5>Small</h5>
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+						  </div>
+
+						  <div class="one_half last column">
+							<h5>Small</h5>
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+						  </div>
+
+						  <hr />
+
+						  <div class="one_half column">
+							<h5>Small</h5>
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+						  </div>
+
+						  <div class="one_half last column">
+							<h5>Small</h5>			
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+						  </div>
+
+						  <hr />
+
+						  <div class="one_half column">
+							<h5>Small</h5>
+								
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+						  </div>
+
+						  <div class="one_half last column">
+							<h5>Small</h5>
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+						  </div>
+
+						  <div class="clearboth"></div>
+						</div>
+
+						<div class="three_fourth last column">
+						  <h5>Lorem Ipsum Dolor Sit Amet</h5>
+							
+							  <p>Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+							  Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet. Quisque
+							  aliquam. Donec faucibus. Mauris a ante. Suspendisse quam sem, consequat
+							  at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis
+							  tellus.</p>
+							
+						  
+						  <hr />
+
+						  <div class="one_third column">
+							<h5>Maecenas ornare tortor</h5>
+							  
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+						  </div>
+
+						  <div class="one_third column">
+							<h5>Maecenas ornare tortor</h5>
+							  
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+						  </div>
+
+						  <div class="one_third last column">
+							<h5>Maecenas ornare tortor</h5>
+							  
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+						  </div>
+						  <hr />
+
+						  <div class="one_fourth column">
+							<h5>Maecenas ornare tortor</h5>
+							  
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+							  
+
+						  </div>
+
+						  <div class="one_fourth column">
+							<h5>
+							  Maecenas ornare tortor</h5>
+							  
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+						  </div>
+
+						  <div class="one_fourth column">
+							<h5>
+							  Maecenas ornare tortor</h5>
+							  
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+						  </div>
+
+						  <div class="one_fourth last column">
+							<h5>
+							  Maecenas ornare tortor</h5>
+							  
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+						  </div>
+
+						  <div class="clearboth"></div>
+						</div><!-- three_fourth last -->
+					<div class="clearboth"></div>
+					
+					<a href="./presentation.html" class="button_link">Back to index</a>
+					<hr />
+					
+					<h1>Columns with portlets inside them!</h1>
+					
+					<div class="sortable">
+						<div class="one_third column">
+						  <div class="portlet">
+							<div class="portlet-header">Maecenas ornare tortor</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+							  Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet. Quisque
+							  aliquam. Donec faucibus.</p>
+							</div>
+						  </div>
+						</div>
+
+						<div class="one_third column">
+						  <div class="portlet">
+							<div class="portlet-header">Maecenas ornare tortor</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis. Proin
+							  tincidunt, velit vel porta elementum, magna diam molestie sapien, non
+							  aliquet massa pede eu diam. Aliquam iaculis.</p>
+							</div>
+						  </div>
+						</div>
+
+						<div class="one_third last column">
+						  <div class="portlet">
+							<div class="portlet-header">Maecenas ornare tortor</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis. Proin
+							  tincidunt, velit vel porta elementum, magna diam molestie sapien, non
+							  aliquet massa pede eu diam. Aliquam iaculis.</p>
+							</div>
+						  </div>
+						</div>
+						<hr />
+
+						<div class="two_third column">
+						  <div class="portlet">
+							<div class="portlet-header">Maecenas ornare tortor</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+							  Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet. Quisque
+							  aliquam. Donec faucibus. Mauris a ante. Suspendisse quam sem, consequat
+							  at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis
+							  tellus.</p>
+							</div>
+						  </div>
+						</div>
+
+						<div class="one_third last column">
+						  <div class="portlet">
+							<div class="portlet-header">Maecenas ornare tortor</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Lorem ipsum dolor sit amet. Quisque aliquam. Donec faucibus. Donec
+							  sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse
+							  quam sem, consequat at, commodo vitae, feugiat in, nunc.</p>
+							</div>
+						  </div>
+						</div>
+						<hr />
+
+						<div class="one_fourth column">
+						  <div class="portlet">
+							<div class="portlet-header">Donec aliquam</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis.</p>
+							</div>
+						  </div>
+						</div>
+
+						<div class="one_fourth column">
+						  <div class="portlet">
+							<div class="portlet-header">Donec aliquam</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis.</p>
+							</div>
+						  </div>
+						</div>
+
+						<div class="one_fourth column">
+						  <div class="portlet">
+							<div class="portlet-header">Donec aliquam</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis.</p>
+							</div>
+						  </div>
+						</div>
+
+						<div class="one_fourth last column">
+						  <div class="portlet">
+							<div class="portlet-header">Donec aliquam</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Proin tincidunt, velit vel porta elementum, magna diam molestie
+							  sapien, non aliquet massa pede eu diam. Aliquam iaculis.</p>
+							</div>
+						  </div>
+						</div>
+						<hr />
+
+						<div class="one_half column">
+						  <div class="portlet">
+							<div class="portlet-header">Small</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.<br />
+							  Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Morbi imperdiet augue quis tellus.<br />
+							  Lorem ipsum dolor sit amet. Quisque aliquam. Donec faucibus.</p>
+							</div>
+						  </div>
+						</div><!-- half -->
+
+						<div class="one_half last column">
+						  <div class="portlet">
+							<div class="portlet-header">Small</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.<br />
+							  Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Morbi imperdiet augue quis tellus.<br />
+							  Lorem ipsum dolor sit amet. Quisque aliquam. Donec faucibus.</p>
+							</div>
+						  </div>
+						</div><!-- half -->
+						<hr />
+
+						<div class="one_fourth column">
+						  <div class="portlet">
+							<div class="portlet-header">Small</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Lorem ipsum dolor sit amet. Quisque aliquam. Donec at quis
+							  faucibus.</p>
+							</div>
+						  </div>
+						  
+						  <hr />
+
+						  <div class="one_half column">
+							<div class="portlet">
+								<div class="portlet-header">Small</div>
+								<div class="portlet-content" style="display: block;">
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+								</div>
+							</div>
+						  </div>
+
+						  <div class="one_half last column">
+							<div class="portlet">
+								<div class="portlet-header">Small</div>
+								<div class="portlet-content" style="display: block;">
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+								</div>
+							</div>
+						  </div>
+
+						  <hr />
+
+						  <div class="one_half column">
+							<div class="portlet">
+								<div class="portlet-header">Small</div>
+								<div class="portlet-content" style="display: block;">
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+								</div>
+							</div>
+						  </div>
+
+						  <div class="one_half last column">
+							<div class="portlet">
+								<div class="portlet-header">Small</div>
+								<div class="portlet-content" style="display: block;">
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+								</div>
+							</div>
+						  </div>
+
+						  <hr />
+
+						  <div class="one_half column">
+							<div class="portlet">
+								<div class="portlet-header">Small</div>
+								<div class="portlet-content" style="display: block;">
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+								</div>
+							</div>
+						  </div>
+
+						  <div class="one_half last column">
+							<div class="portlet">
+								<div class="portlet-header">Small</div>
+								<div class="portlet-content" style="display: block;">
+									<p>Proin tincidunt, velit vel porta elementum.</p>
+								</div>
+							</div>
+						  </div>
+
+						  <div class="clearboth"></div>
+						</div><!-- one_fourth -->
+
+						<div class="three_fourth last column">
+						  <div class="portlet">
+							<div class="portlet-header">Lorem Ipsum Dolor Sit Amet</div>
+							<div class="portlet-content" style="display: block;">
+							  <p>Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+							  Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+							  Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet. Quisque
+							  aliquam. Donec faucibus. Mauris a ante. Suspendisse quam sem, consequat
+							  at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis
+							  tellus.</p>
+							</div>
+						  </div>
+						  <hr />
+
+						  <div class="one_third column">
+							<div class="portlet">
+							  <div class="portlet-header">Maecenas ornare tortor</div>
+							  <div class="portlet-content" style="display: block;">
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+							  </div>
+							</div>
+						  </div>
+
+						  <div class="one_third column">
+							<div class="portlet">
+							  <div class="portlet-header">Maecenas ornare tortor</div>
+							  <div class="portlet-content" style="display: block;">
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+							  </div>
+							</div>
+						  </div>
+
+						  <div class="one_third last column">
+							<div class="portlet">
+							  <div class="portlet-header">Maecenas ornare tortor</div>
+							  <div class="portlet-content" style="display: block;">
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+							  </div>
+							</div>
+						  </div>
+						  <hr />
+
+						  <div class="one_fourth column">
+							<div class="portlet">
+							  <div class="portlet-header">Maecenas ornare tortor</div>
+							  <div class="portlet-content" style="display: block;">
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+							  </div>
+							</div>
+						  </div>
+
+						  <div class="one_fourth column">
+							<div class="portlet">
+							  <div class="portlet-header">Maecenas ornare tortor</div>
+							  <div class="portlet-content" style="display: block;">
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+							  </div>
+							</div>
+						  </div>
+
+						  <div class="one_fourth column">
+							<div class="portlet">
+							  <div class="portlet-header">Maecenas ornare tortor</div>
+							  <div class="portlet-content" style="display: block;">
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+							  </div>
+							</div>
+						  </div>
+
+						  <div class="one_fourth last column">
+							<div class="portlet">
+							  <div class="portlet-header">Maecenas ornare tortor</div>
+							  <div class="portlet-content" style="display: block;">
+								<p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+								Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+								Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.
+								Quisque aliquam. Donec faucibus.</p>
+							  </div>
+							</div>
+						  </div>
+
+						  <div class="clearboth"></div>
+						</div><!-- three_fourth last -->
+					</div>
+					<div class="clearboth" style="padding-bottom:20px;"></div>
+					<a href="./presentation.html" class="button_link">Back to index</a>
+				</div> <!-- inner -->
+			</div> <!-- primary_right -->
+		</div> <!-- bgwrap -->
+	</div> <!-- container -->
+</body>
+</html>

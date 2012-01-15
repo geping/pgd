@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	
+	<title>Hello! Admin</title>
+
+	<link type="text/css" href="./style.css" rel="stylesheet" /> <!-- the layout css file -->
+	<link type="text/css" href="./css/jquery.cleditor.css" rel="stylesheet" />
+	
+	<script type='text/javascript' src='./js/jquery-1.4.2.min.js'></script>	<!-- jquery library -->
+	<script type='text/javascript' src='./js/jquery-ui-1.8.5.custom.min.js'></script> <!-- jquery UI -->
+	<script type='text/javascript' src='./js/cufon-yui.js'></script> <!-- Cufon font replacement -->
+	<script type='text/javascript' src='./js/colaboratelight_400.font.js'></script> <!-- the Colaborate Light font -->
+	<script type='text/javascript' src='./js/easytooltip.js'></script> <!-- element tooltips -->
+	<script type='text/javascript' src='./js/jquery.tablesorter.min.js'></script> <!-- tablesorter -->
+	
+	<!--[if IE 8]>
+		<script type='text/javascript' src='http://hello.amnesio.com/js/excanvas.js'></script>
+		<link rel="stylesheet" href="http://hello.amnesio.com/css/IEfix.css" type="text/css" media="screen" />
+	<![endif]--> 
+ 
+	<!--[if IE 7]>
+		<script type='text/javascript' src='http://hello.amnesio.com/js/excanvas.js'></script>
+		<link rel="stylesheet" href="http://hello.amnesio.com/css/IEfix.css" type="text/css" media="screen" />
+	<![endif]--> 
+	
+	<script type='text/javascript' src='./js/visualize.jquery.js'></script> <!-- visualize plugin for graphs / statistics -->
+	<script type='text/javascript' src='./js/iphone-style-checkboxes.js'></script> <!-- iphone like checkboxes -->
+	<script type='text/javascript' src='./js/jquery.cleditor.min.js'></script> <!-- wysiwyg editor -->
+
+	<script type='text/javascript' src='./js/custom.js'></script> <!-- the "make them work" script -->
+<meta charset="UTF-8"></head>
+
+<body>
+
+	<div id="container">
+		<div id="bgwrap">
+			<div id="primary_left">
+        
+				<div id="logo">
+					<a href="http://hello.amnesio.com/dashboard.html" title="Dashboard"><img src="./assets/logo.png" alt="" /></a>
+				</div> <!-- logo end -->
+
+				<div id="menu"> <!-- navigation menu -->
+					<ul>
+						<li class="current"><a href="#" class="dashboard"><img src="./assets/icons/small_icons_3/dashboard.png" alt /><span class="current">Dashboard</span></a></li>
+						<li><a href="#"><img src="./assets/icons/small_icons_3/posts.png" alt /><span>Posts</span></a></li>
+						<li><a href="#"><img src="./assets/icons/small_icons_3/media.png" alt /><span>Media</span></a>
+							<ul>
+								<li><a href="#">Upload</a></li>
+								<li><a href="#">Add new</a></li>
+								<li><a href="#">Categories</a></li>
+							</ul>
+						</li>
+						<li class="tooltip" title="Menu items can also have a tooltip!"><a href="#"><img src="./assets/icons/small_icons_3/notes.png" alt /><span>My notes</span></a></li>
+						<li><a href="#"><img src="./assets/icons/small_icons_3/coin.png" alt /><span>Earnings</span></a></li>
+						<li><a href="#"><img src="./assets/icons/small_icons_3/users.png" alt /><span>Users</span></a></li>
+						<li><a href="#"><img src="./assets/icons/small_icons_3/settings.png" alt /><span>Settings</span></a></li>
+					</ul>
+				</div> <!-- navigation menu end -->
+			</div> <!-- sidebar end -->
+
+			<div id="primary_right">
+				<div class="inner">
+				
+				<h1>Notifications</h1>
+				<p>These are all the notification boxes that "Hello! Admin" comes with! Following the structure, you can easily change colors / icons to create your custom one! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum, risus lacinia scelerisque facilisis, tellus felis tristique mauris, nec dignissim felis mi ac quam.</p>
+				<div class="clearboth"></div>
+				<div class="notification success"> 
+						<span></span> 
+						<div class="text"> 
+							<p><strong>Success!</strong> This is a success notification. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius eros et risus suscipit vehicula.</p> 
+						</div> 
+					</div> 
+						
+					<div class="notification warning"> 
+						<span></span> 
+						<div class="text"> 
+							<p><strong>Warning!</strong> This is a warning notification. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius eros et risus suscipit vehicula.</p> 
+						</div> 
+					</div> 
+        
+					<div class="notification error"> 
+						<span></span> 
+						<div class="text"> 
+							<p><strong>Error!</strong> This is a error notification. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius eros et risus suscipit vehicula.</p> 
+						</div> 
+					</div> 
+
+					 <div class="notification tip"> 
+						<span></span> 
+						 <div class="text"> 
+							<p><strong>Quick Tip!</strong> This is a quick tip notification. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius eros et risus suscipit vehicula.</p> 
+						</div> 
+					</div> 
+
+					<div class="notification secure"> 
+						<span></span> 
+						<div class="text"> 
+							<p><strong>Secure Area!</strong> This is a secure area notification. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius eros et risus suscipit vehicula.</p> 
+						</div>        
+					</div> 
+						
+					<div class="notification info"> 
+						<span></span> 
+						<div class="text"> 
+							<p><strong>Info!</strong> This is a info notification. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius eros et risus suscipit vehicula.</p> 
+						</div> 
+					</div> 
+						
+					<div class="notification message"> 
+						<span></span> 
+						<div class="text"> 
+							<p><strong>Message!</strong> This is a message notification. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius eros et risus suscipit vehicula.</p> 
+						</div> 
+					</div> 
+						
+					<div class="notification download"> 
+						<span></span> 
+						<div class="text"> 
+							<p><strong>Download!</strong> This is a download notification. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius eros et risus suscipit vehicula.</p> 
+						</div> 
+					</div> 
+					   
+					<div class="notification purchase"> 
+						<span></span> 
+						<div class="text"> 
+							<p><strong>Purchase!</strong> This is a purchase notification. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius eros et risus suscipit vehicula.</p> 
+						</div> 
+					</div> 
+						
+					<div class="notification print"> 
+						<span></span> 
+						<div class="text"> 
+							<p><strong>Print!</strong> This is a print notification. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius eros et risus suscipit vehicula.</p> 
+						</div> 
+					</div> 
+					<a href="./presentation.html" class="button_link" >Back to index</a>
+				
+				</div> <!-- inner -->
+			</div> <!-- primary_right -->
+		</div> <!-- bgwrap -->
+	</div> <!-- container -->
+</body>
+</html>
